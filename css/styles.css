@@ -30,7 +30,33 @@
 	/* 🔖 Components */
 
 	--logo-accent-cl: #4d5ae5;
+	--border-header-color: #e7e9fc;
 }
+
+/* reset css style */
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+/* common style */
 
 body {
 	font-family: var(--font-primary-family);
@@ -38,14 +64,14 @@ body {
 	color: var(--text-primary-color);
 }
 
-ol,
-ul {
-	list-style-type: none;
+img {
+	display: block;
 }
 
-a {
-	color: currentColor;
-	text-decoration: none;
+.container {
+	max-width: 1158px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .button {
@@ -61,8 +87,16 @@ a {
 /* Header  */
 
 .header {
+	border-bottom: 1px solid var(--border-header-color);
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
 }
 .header-nav {
+	display: flex;
+	align-items: center;
 }
 .logo {
 	font-family: var(--font-secondary-family);
@@ -77,10 +111,16 @@ a {
 	color: var(--text-heading-color);
 }
 .header-nav-list {
+	display: flex;
+	align-items: center;
+	margin-left: 76px;
+	gap: 40px;
 }
 .header-nav-item {
 }
 .header-nav-link {
+	display: block;
+	padding: 24px 0;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -94,8 +134,12 @@ a {
 
 .header-address {
 	font-style: normal;
+	margin-left: auto;
 }
 .header-address-list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
 }
 .header-address-item {
 }
