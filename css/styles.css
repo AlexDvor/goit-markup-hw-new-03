@@ -176,12 +176,9 @@ img {
 
 /* Hero */
 
-.hero-background {
-	background-color: var(--background-hero-color);
-}
-
 .hero-section {
 	padding: 182px 0 292px 0;
+	background-color: var(--background-hero-color);
 }
 
 .hero-title {
@@ -207,16 +204,12 @@ img {
 
 /* Features */
 .features-section {
+	padding: 120px 0 120px;
 }
-.features-title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.11111;
-	letter-spacing: 0.02em;
-	text-align: center;
-	color: var(--text-heading-color);
-}
+
 .features-list {
+	display: flex;
+	gap: 24px;
 }
 .features-item {
 }
@@ -226,8 +219,10 @@ img {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--text-heading-color);
+	margin-bottom: 8px;
 }
 .features-text {
+	width: 264px;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -236,6 +231,7 @@ img {
 /* Team  */
 
 .team-section {
+	padding: 120px 0;
 	background-color: var(--background-team-color);
 }
 .team-title {
@@ -246,13 +242,26 @@ img {
 	text-align: center;
 	text-transform: capitalize;
 	color: var(--text-heading-color);
+	margin-bottom: 72px;
 }
 .team-list {
+	display: flex;
+	gap: 24px;
 }
 .team-item {
 	background-color: var(--white);
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+		0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .team-img {
+}
+
+.team-info-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 0;
 }
 .team-name {
 	font-weight: 500;
@@ -260,6 +269,7 @@ img {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--text-heading-color);
+	margin-bottom: 8px;
 }
 .team-work {
 	font-size: 16px;
@@ -269,6 +279,7 @@ img {
 
 /* Portfolio  */
 .portfolio-section {
+	padding: 120px 0;
 }
 .portfolio-title {
 	font-weight: 700;
@@ -278,12 +289,23 @@ img {
 	text-align: center;
 	text-transform: capitalize;
 	color: var(--text-heading-color);
+	margin-bottom: 72px;
 }
 .portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
 }
 .portfolio-item {
+	border-right: 1px solid #e7e9fc;
+	border-bottom: 1px solid #e7e9fc;
+	border-left: 1px solid #e7e9fc;
 }
 .portfolio-img {
+}
+
+.portfolio-info-wrap {
+	padding: 32px 16px;
 }
 .portfolio-subtitle {
 	font-weight: 500;
@@ -291,6 +313,7 @@ img {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--text-heading-color);
+	margin-bottom: 8px;
 }
 .portfolio-text {
 	font-size: 16px;
@@ -300,8 +323,15 @@ img {
 /* Footer */
 .footer-section {
 	background-color: var(--background-footer-color);
+	padding: 101px 0 100px;
+}
+
+.logo-footer {
+	display: block;
+	margin-bottom: 17.5px;
 }
 .footer-text {
+	width: 264px;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
