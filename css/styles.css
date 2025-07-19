@@ -1,0 +1,237 @@
+:root {
+	/* 🎨 Base Colors */
+	--gris: #f4f4fd;
+	--white: #ffffff;
+
+	/* 🖋 Typography */
+
+	--font-primary-family: 'Roboto', sans-serif;
+	--font-secondary-family: 'Raleway', sans-serif;
+
+	--text-primary-color: #434455;
+	--text-heading-color: #2e2f42;
+	--text-accent-color: #4d5ae5;
+	--text-hero-color: #fff;
+	--text-footer-color: #f4f4fd;
+	--button-text-color: #fff;
+
+	/* 🎯 Accent & States */
+
+	--accent-color: #4d5ae5;
+	--focus-color: #404bbf;
+
+	/* 🧱 Backgrounds */
+
+	--background-main-color: #fff;
+	--background-hero-color: #2e2f42;
+	--background-footer-color: #2e2f42;
+	--background-team-color: var(--gris);
+
+	/* 🔖 Components */
+
+	--logo-accent-cl: #4d5ae5;
+}
+
+body {
+	font-family: var(--font-primary-family);
+	background-color: var(--background-main-color);
+	color: var(--text-primary-color);
+}
+
+ol,
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+.button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	background-color: var(--accent-color);
+	color: var(--button-text-color);
+	cursor: pointer;
+}
+
+/* Header  */
+
+.header {
+}
+.header-nav {
+}
+.logo {
+	font-family: var(--font-secondary-family);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--logo-accent-cl);
+}
+.header-logo-decoration {
+	color: var(--text-heading-color);
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--text-heading-color);
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+	color: var(--focus-color);
+}
+
+.header-address {
+	font-style: normal;
+}
+.header-address-list {
+}
+.header-address-item {
+}
+.header-address-link {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+	color: var(--focus-color);
+}
+
+/* Hero */
+
+.hero-section {
+	background-color: var(--background-hero-color);
+}
+
+.hero-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--text-hero-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: var(--focus-color);
+}
+
+/* Features */
+.features-section {
+}
+.features-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11111;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--text-heading-color);
+}
+.features-list {
+}
+.features-item {
+}
+.features-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--text-heading-color);
+}
+.features-text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+/* Team  */
+
+.team-section {
+	background-color: var(--background-team-color);
+}
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--text-heading-color);
+}
+.team-list {
+}
+.team-item {
+	background-color: var(--white);
+}
+.team-img {
+}
+.team-name {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--text-heading-color);
+}
+.team-work {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+/* Portfolio  */
+.portfolio-section {
+}
+.portfolio-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--text-heading-color);
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-img {
+}
+.portfolio-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--text-heading-color);
+}
+.portfolio-text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+/* Footer */
+.footer-section {
+	background-color: var(--background-footer-color);
+}
+.footer-text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--text-footer-color);
+}
+.footer-logo-decoration {
+	color: var(--text-footer-color);
+}
